@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0e0f13" />
+  <title>Джал Фильм — билеты в кино</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#/" class="logo">
+        <span class="logo__mark">▶</span>
+        <span>Джал<b>Фильм</b></span>
+      </a>
+      <nav class="nav">
+        <a href="#/">Афиша</a>
+        <a href="#/soon">Скоро</a>
+        <a href="#/cinemas">Кинотеатры</a>
+        <a href="#/tickets">Мои билеты <span class="badge ticket-count" hidden></span></a>
+      </nav>
+      <select id="city" class="city">
+        <option>Бишкек</option>
+        <option>Ош</option>
+      </select>
+    </div>
+  </header>
+
+  <main id="app" class="container"></main>
+
+  <footer class="footer">
+    <div class="container">
+      © 2026 Джал Фильм · Демо-версия, оплата не настоящая
+    </div>
+  </footer>
+
+  <nav class="tabbar">
+    <a href="#/"><span class="tabbar__icon">🎬</span>Афиша</a>
+    <a href="#/soon"><span class="tabbar__icon">🗓️</span>Скоро</a>
+    <a href="#/cinemas"><span class="tabbar__icon">📍</span>Кинотеатры</a>
+    <a href="#/tickets"><span class="tabbar__icon">🎟️<span class="badge ticket-count" hidden></span></span>Билеты</a>
+  </nav>
+
+  <div id="toast" class="toast" hidden></div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
